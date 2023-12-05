@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML FORM</h1>
+
+    <fieldset>
+      <legend>Student Register</legend>
+
+      <form action="" method="get">
+        <table>
+          <tr>
+            <td><label for="yourName">Your Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="your_name"
+                id="yourName"
+                required
+                autofocus
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="yourEmail">Your Email</label></td>
+            <td><input type="email" name="your_email" id="yourEmail" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                autofocus
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td>
+              <input
+                type="date"
+                id="dob"
+                name="dob"
+                required
+                max="2005-01-01"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="salary">Salary</label></td>
+            <td>
+              <input
+                type="number"
+                required
+                name="salary"
+                id="salary"
+                max="1000"
+                min="100"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="phone">Phone</label></td>
+            <td><input type="tel" id="phone" name="phone" required /></td>
+          </tr>
+
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" id="male" name="gender" />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="nation">Nations</label></td>
+            <td>
+              <select name="nation" id="nation">
+                <option value="MM">Myanmar</option>
+                <option value="CHN">China</option>
+                <option value="JP">Japan</option>
+                <option value="IDN">India</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="">Your Skills</label></td>
+            <td>
+              <input type="checkbox" name="skill" id="html" value="HTML" />
+              <label for="html">HTML</label>
+              <input type="checkbox" name="skill" id="css" value="CSS" />
+              <label for="css">CSS</label>
+              <input type="checkbox" name="skill" id="js" value="JS" />
+              <label for="js">JS</label>
+              <input type="checkbox" name="skill" id="php" value="PHP" />
+              <label for="php">PHP</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="address">Your Address</label></td>
+            <td>
+              <textarea name="address" id="address" cols="30" rows="6"></textarea>
+            </td>
+          </tr>
+        </table>
+        <hr />
+        <button>Register Now</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML FORM</h1>
+
+    <fieldset>
+      <legend>Students Register</legend>
+      <form action="" method="get" id="regForm">
+        <table>
+          <tr>
+            <td>
+              <label for="yourName">Your Name</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="your_name"
+                id="yourName"
+                required
+                autofocus
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="yourEmail">Your Email</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                name="your_email"
+                id="yourEmail"
+                placeholder="eg.example@gmail.com"
+                required
+                autofocus
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="password">Password</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                autofocus
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="dob">Date of Birth</label>
+            </td>
+            <td>
+              <input
+                type="date"
+                name="dob"
+                id="dob"
+                max="2005-01-01"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="salary">Your Salary</label>
+            </td>
+            <td>
+              <input
+                type="number"
+                name="your_salary"
+                id="salary"
+                max="1000"
+                min="100"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone-number">Phone Number</label>
+            </td>
+            <td>
+              <input
+                type="tel"
+                name="phone_number"
+                id="phone-number"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label>Gender</label>
+            </td>
+
+            <td>
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                required
+                checked
+              />
+              <label for="male">Male</label>
+
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                required
+              />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="nation">Nations</label>
+            </td>
+            <td>
+              <select name="nation" id="nation">
+                <option value="MM">Myanmar</option>
+                <option value="JP" selected>Japan</option>
+                <option value="IND">India</option>
+                <option value="CHN">China</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Your Skills</label>
+            </td>
+            <td>
+              <input type="checkbox" id="html" value="HTML" name="skill">
+              <label for="html">HTML</label>
+              <input type="checkbox" id="html" value="CSS" name="skill">
+              <label for="css">CSS</label>
+              <input type="checkbox" id="html" value="Java" name="skill">
+              <label for="java">Java Script</label>
+              <input type="checkbox" id="html" value="PHP" name="skill">
+              <label for="php">PHP</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="address">Your Address</label>
+            </td>
+            <td>
+              <textarea name="address" id="address" cols="30" rows="5"></textarea>
+            </td>
+          </tr>
+        </table>
+        <hr />
+        <!-- <button type="submit">Register Now</button> -->
+        <input type="submit" value="Register Now" >
+      </form>
+    </fieldset>
+  </body>
+</html>
